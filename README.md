@@ -49,7 +49,7 @@ This will update the Servers `dtos.ts` and generate its corresponding `dtos.js` 
 
 ## Generate Static Production Build
 
-Most of the time during development you'll be viewing your App through Nuxt.js dev server to take advantage of it's Hot Module Replace support for instant UI updates. To view a production build of your App run:
+Most of the time during development you'll be viewing your App through Nuxt.js dev server to take advantage of it's Hot Module Replacement for instant UI updates. At any time you can also view a production build of your App with:
 
     $ npm run build
 
