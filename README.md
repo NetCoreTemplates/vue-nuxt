@@ -51,6 +51,6 @@ Which will generate an encapsulated production build of your App in `/wwwroot` w
 
 To create a release client and server build of your App run:
 
-    npm run publish
+    $ npm run publish
 
 Which will publish your App to `bin/Release/netcoreapp2.0/publish` which you can deploy as a standard .NET Core App.
