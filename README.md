@@ -43,9 +43,9 @@ Most of the time during development you'll be viewing your App through Nuxt.js d
 
     $ npm run build
 
-Which will generate an encapsulated production build of your App in `/wwwroot` which will let you 
+Which will generate an encapsulated production build of your App in `/wwwroot` which you can view running from your ServiceStack Server App directly:
 
-    - http://localhost:5000
+ - http://localhost:5000
 
 ## Publishing App for Deployment
 
