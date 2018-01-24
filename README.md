@@ -18,9 +18,13 @@ Nuxt Apps also enable development of high-performance responsive Web Apps by emp
 
 ## Install Dependencies
 
-After creating your project install your client App dependencies with:
+After creating your project go to your `ProjectName` folder and install your client App dependencies with:
 
     $ npm install
+
+If your IDE doesn't automatically install your .NET NuGet Dependencies, you can manually install them with:
+
+    $ dotnet restore
 
 ## Dev Workflow
 
