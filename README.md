@@ -16,6 +16,12 @@ Nuxt is an opinionated structured framework for rapidly developing Web Applicati
 
 Nuxt Apps also enable development of high-performance responsive Web Apps by employing advanced packaging techniques like automatic code spliting, link prefetching, SPA navigation of statically-generated cacheable assets and integrated support for ES6/7 transpilation and js/css bundling and minification.
 
+## Install Dependencies
+
+After creating your project install your client App dependencies with:
+
+    $ npm install
+
 ## Dev Workflow
 
 Start a [watched .NET Core build](http://docs.servicestack.net/templates-websites#watched-net-core-builds) in the background from the command-line with:
