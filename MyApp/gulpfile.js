@@ -2,12 +2,8 @@
     var SCRIPTS = {
         'dev': 'npm run dev',
         'dtos': 'npm run dtos',
-        'webpack-build': 'npm run build',
-        'webpack-build-prod': 'npm run build-prod',
-        'webpack-build-vendor': 'npm run build-vendor',
-        'publish': 'npm run publish',
-        'tests-run': 'npm run test',
-        'tests-watch': 'npm run test-watch'
+        'build': 'npm run build',
+        'publish': 'npm run publish'
     };
 
     var gulp = require('gulp');
