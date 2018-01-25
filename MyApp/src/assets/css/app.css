@@ -34,3 +34,11 @@ a {
 .navbar-nav .nav-item .nuxt-link-active:focus {
   color: #fff;
 }
+
+.loading {
+  background: url(../../static/img/loading.svg) no-repeat;
+  padding-left: 30px;
+  font-style: normal;
+  color: #999;
+  line-height: 20px;
+}
