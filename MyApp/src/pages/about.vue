@@ -15,7 +15,7 @@
       provides an optimal, highly productive development experience.      
     </p>
     <p>
-      Nuxt Apps also enable development of high-performance responsive Web Apps by employing advanced packaging techniques like 
+      Nuxt also enables the development of high-performance responsive Web Apps by employing advanced packaging techniques like 
       automatic code spliting, link prefetching, SPA navigation of statically-generated cacheable assets 
       and integrated support for ES6/7 transpilation and js/css bundling and minification.
     </p>

@@ -12,9 +12,9 @@
 
 ## Description
 
-Nuxt is an opinionated structured framework for rapidly developing Web Applications utilizing developer-friendly [Vue Single Page Components](https://vuejs.org/v2/guide/single-file-components.html) and features Hot module replacement that together with [.NET Core's watched builds](http://docs.servicestack.net/templates-websites#watched-net-core-builds) provides an optimal, highly productive development experience.
+Nuxt is an opinionated structured framework for rapidly developing Web Applications utilizing developer-friendly [Vue Single Page Components](https://vuejs.org/v2/guide/single-file-components.html) and featuring Hot module replacement that together with [.NET Core's watched builds](http://docs.servicestack.net/templates-websites#watched-net-core-builds) provides an highly productive development experience.
 
-Nuxt Apps also enable development of high-performance responsive Web Apps by employing advanced packaging techniques like automatic code spliting, link prefetching, SPA navigation of statically-generated cacheable assets and integrated support for ES6/7 transpilation and js/css bundling and minification.
+Nuxt also enables the development of high-performance responsive Web Apps by employing advanced packaging techniques like automatic code spliting, link prefetching, SPA navigation of statically-generated cacheable assets and integrated support for ES6/7 transpilation and js/css bundling and minification.
 
 ## Install Dependencies
 
