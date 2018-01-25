@@ -3,7 +3,7 @@ using ServiceStack;
 
 namespace MyApp.ServiceModel
 {
-    [Route("/posts/{Id}")]
+    [Route("/posts")]
     public class GetPost : IReturn<GetPostResponse> 
     {
         public int Id { get; set; }
