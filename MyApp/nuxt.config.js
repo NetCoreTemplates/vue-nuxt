@@ -13,7 +13,7 @@ module.exports = {
     ]
   },
   plugins: [{ src: '~/plugins/nuxt-client-init.js', ssr: false }],
-  modules: ["@nuxtjs/proxy"],
+  modules: ['@nuxtjs/proxy','@nuxtjs/font-awesome'],
   proxy: {
     '/json': 'http://localhost:5000/',
   },

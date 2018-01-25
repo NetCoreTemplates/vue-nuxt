@@ -13,6 +13,7 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.3",
     "@servicestack/client": "^1.0.2",
     "bootstrap": "^4.0.0",
     "nuxt": "^1.0.0"
