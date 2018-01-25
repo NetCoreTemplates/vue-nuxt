@@ -1,15 +1,14 @@
 {
-  "name": "my-app",
+  "name": "MyApp",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
-  "author": "Demis Bellot <demis.bellot@gmail.com>",
+  "description": "ServiceStack Nuxt.js project",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "dtos": "cd src/shared && typescript-ref && tsc dtos.ts",
     "build": "nuxt build",
     "publish": "npm run build && dotnet publish -c Release",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint --ext .js,.vue .",
     "precommit": "npm run lint"
   },
   "dependencies": {
