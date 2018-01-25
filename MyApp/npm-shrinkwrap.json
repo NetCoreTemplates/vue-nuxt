@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "MyApp",
   "version": "1.0.0",
   "lockfileVersion": 1,
   "dependencies": {
@@ -7432,6 +7432,12 @@
       "version": "0.0.6",
       "resolved": "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz",
       "integrity": "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
+    },
+    "typescript": {
+      "version": "2.6.2",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-2.6.2.tgz",
+      "integrity": "sha1-PFtv1/beCRQmkCfwPAlGdY92c6Q=",
+      "dev": true
     },
     "uglify-js": {
       "version": "3.3.7",
