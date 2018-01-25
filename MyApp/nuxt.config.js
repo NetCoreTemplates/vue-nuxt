@@ -2,14 +2,10 @@ module.exports = {
   mode: 'spa',
   srcDir: 'src',
   generate: {
-    dir: 'wwwroot',
-    /*
-    ** Generate dynamic routes for static file servers that 
-    *  don't provide a way to fallback to a default index.html page
-    */
+    dir: 'wwwroot',    
     routes: [
-      '/posts/1',
-      '/posts/2'
+      // Generate static pages for static file servers handling dynamic routes
+      ...[...Array(5).keys()].map(i => `/posts/${i+1}`) //= [/posts/1, /posts/2, /posts/3, /posts/4, /posts/5]
     ]
   },
   plugins: [{ src: '~/plugins/nuxt-client-init.js', ssr: false }],

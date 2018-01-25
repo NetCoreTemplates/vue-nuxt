@@ -41,5 +41,12 @@ namespace MyApp.ServiceInterface
                 {"Gistlyn", "http://gistlyn.com"},
             }
         };
+
+        public object Any(GetPost request) => new GetPostResponse 
+        {
+            Id = request.Id,
+            Title = $"Title {request.Id}",
+            Description = $"Post Description {request.Id}",
+        };
     }
 }

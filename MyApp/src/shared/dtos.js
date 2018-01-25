@@ -1,6 +1,6 @@
 "use strict";
 /* Options:
-Date: 2018-01-23 18:20:14
+Date: 2018-01-25 00:22:23
 Version: 5.03
 Tip: To override a DTO option, remove "//" prefix before updating
 BaseUrl: http://localhost:5000
@@ -28,6 +28,12 @@ var GetLinksResponse = /** @class */ (function () {
     return GetLinksResponse;
 }());
 exports.GetLinksResponse = GetLinksResponse;
+var GetPostResponse = /** @class */ (function () {
+    function GetPostResponse() {
+    }
+    return GetPostResponse;
+}());
+exports.GetPostResponse = GetPostResponse;
 // @Route("/hello")
 // @Route("/hello/{Name}")
 var Hello = /** @class */ (function () {
@@ -47,3 +53,12 @@ var GetLinks = /** @class */ (function () {
     return GetLinks;
 }());
 exports.GetLinks = GetLinks;
+// @Route("/posts/{Id}")
+var GetPost = /** @class */ (function () {
+    function GetPost() {
+    }
+    GetPost.prototype.createResponse = function () { return new GetPostResponse(); };
+    GetPost.prototype.getTypeName = function () { return "GetPost"; };
+    return GetPost;
+}());
+exports.GetPost = GetPost;
