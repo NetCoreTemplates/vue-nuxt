@@ -1,5 +1,5 @@
 /* Options:
-Date: 2018-01-25 00:22:23
+Date: 2018-01-25 02:07:56
 Version: 5.03
 Tip: To override a DTO option, remove "//" prefix before updating
 BaseUrl: http://localhost:5000
@@ -59,7 +59,7 @@ export class GetLinks implements IReturn<GetLinksResponse>
     getTypeName() { return "GetLinks"; }
 }
 
-// @Route("/posts/{Id}")
+// @Route("/posts")
 export class GetPost implements IReturn<GetPostResponse>
 {
     id: number;
