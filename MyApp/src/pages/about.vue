@@ -8,11 +8,9 @@
       Vue.js Web Apps
     </h2>
     <p>
-      Nuxt is an opinionated structured framework for rapidly developing Web Applications utilizing developer-friendly
+      Nuxt is an opinionated structured framework for rapidly developing Web Applications utilizing developer-friendly 
       <a href="https://vuejs.org/v2/guide/single-file-components.html">Vue Single Page Components</a>
-      and features Hot module replacement that together with 
-      <a href="http://docs.servicestack.net/templates-websites#watched-net-core-builds">.NET Core's watched builds</a>
-      provides an optimal, highly productive development experience.      
+      and its built-in Hot module replacement to enable a highly productive development experience.
     </p>
     <p>
       Nuxt also enables the development of high-performance responsive Web Apps by employing advanced packaging techniques like 
