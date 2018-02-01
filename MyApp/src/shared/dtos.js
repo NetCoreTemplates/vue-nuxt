@@ -1,6 +1,5 @@
-"use strict";
 /* Options:
-Date: 2018-01-25 05:29:54
+Date: 2018-02-01 14:55:17
 Version: 5.03
 Tip: To override a DTO option, remove "//" prefix before updating
 BaseUrl: http://localhost:5000
@@ -15,25 +14,24 @@ BaseUrl: http://localhost:5000
 //ExcludeTypes:
 //DefaultImports:
 */
-exports.__esModule = true;
 var HelloResponse = /** @class */ (function () {
     function HelloResponse() {
     }
     return HelloResponse;
 }());
-exports.HelloResponse = HelloResponse;
+export { HelloResponse };
 var GetLinksResponse = /** @class */ (function () {
     function GetLinksResponse() {
     }
     return GetLinksResponse;
 }());
-exports.GetLinksResponse = GetLinksResponse;
+export { GetLinksResponse };
 var GetPostResponse = /** @class */ (function () {
     function GetPostResponse() {
     }
     return GetPostResponse;
 }());
-exports.GetPostResponse = GetPostResponse;
+export { GetPostResponse };
 // @Route("/hello")
 // @Route("/hello/{Name}")
 var Hello = /** @class */ (function () {
@@ -43,7 +41,7 @@ var Hello = /** @class */ (function () {
     Hello.prototype.getTypeName = function () { return "Hello"; };
     return Hello;
 }());
-exports.Hello = Hello;
+export { Hello };
 // @Route("/links")
 var GetLinks = /** @class */ (function () {
     function GetLinks() {
@@ -52,7 +50,7 @@ var GetLinks = /** @class */ (function () {
     GetLinks.prototype.getTypeName = function () { return "GetLinks"; };
     return GetLinks;
 }());
-exports.GetLinks = GetLinks;
+export { GetLinks };
 // @Route("/posts")
 var GetPost = /** @class */ (function () {
     function GetPost() {
@@ -61,4 +59,4 @@ var GetPost = /** @class */ (function () {
     GetPost.prototype.getTypeName = function () { return "GetPost"; };
     return GetPost;
 }());
-exports.GetPost = GetPost;
+export { GetPost };
