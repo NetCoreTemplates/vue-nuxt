@@ -12,6 +12,7 @@ module.exports = {
   modules: ['@nuxtjs/proxy','@nuxtjs/font-awesome'],
   proxy: {
     '/json': 'http://localhost:5000/',
+    '/auth': 'http://localhost:5000/',
   },
   css: ['bootstrap/dist/css/bootstrap.css', '~/assets/css/app.css'],
   /*
