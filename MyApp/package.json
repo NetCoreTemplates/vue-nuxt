@@ -13,20 +13,20 @@
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.3",
-    "@servicestack/client": "^1.0.8",
-    "bootstrap": "^4.0.0",
+    "@servicestack/client": "^1.0.12",
+    "bootstrap": "^4.1.0",
     "nuxt": "^1.4.0"
   },
   "devDependencies": {
-    "@nuxtjs/proxy": "^1.1.4",
-    "@servicestack/cli": "^1.0.2",
-    "babel-eslint": "^8.2.2",
+    "@nuxtjs/proxy": "^1.2.4",
+    "@servicestack/cli": "^1.0.3",
+    "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
-    "eslint-friendly-formatter": "^4.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.4.0",
+    "eslint-plugin-vue": "^4.5.0",
     "gulp": "^3.9.1",
     "loader-utils": "^1.1.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.8.3"
   }
 }
