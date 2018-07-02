@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <DebugType>portable</DebugType>
     <OutputType>Library</OutputType>
   </PropertyGroup>
@@ -10,9 +10,9 @@
     <ProjectReference Include="..\MyApp.ServiceInterface\MyApp.ServiceInterface.csproj" />
     <ProjectReference Include="..\MyApp.ServiceModel\MyApp.ServiceModel.csproj" />
 
-    <PackageReference Include="NUnit" Version="3.9.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="NUnit" Version="3.10.*" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.10.*" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.7.*" />
     <PackageReference Include="ServiceStack" Version="5.*" />
     <PackageReference Include="ServiceStack.Kestrel" Version="5.*" />
   </ItemGroup>
