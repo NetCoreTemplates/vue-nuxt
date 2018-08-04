@@ -4,6 +4,7 @@
   "description": "ServiceStack Nuxt.js project",
   "private": true,
   "scripts": {
+    "postinstall": "npm run build",
     "dev": "nuxt",
     "dtos": "cd src/shared && typescript-ref && tsc -m ES6 dtos.ts",
     "build": "nuxt build",
