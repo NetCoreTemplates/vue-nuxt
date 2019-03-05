@@ -44,7 +44,7 @@ namespace MyApp
         // Configure your AppHost with the necessary configuration and dependencies your App needs
         public override void Configure(Container container)
         {
-            Plugins.Add(new TemplatePagesFeature()); // enable server-side rendering, see: http://templates.servicestack.net
+            Plugins.Add(new SharpPagesFeature()); // enable server-side rendering, see: https://sharpscript.net/docs/sharp-pages
 
             SetConfig(new HostConfig
             {

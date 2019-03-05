@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using ServiceStack;
-using ServiceStack.Templates;
+using ServiceStack.Script;
 using ServiceStack.DataAnnotations;
 using MyApp.ServiceModel;
 
