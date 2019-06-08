@@ -17,7 +17,7 @@ body {
 }
 .navbar {
   border-radius: 0;
-  background: #41b883 !important;
+  background: #2f495e !important;
 }
 a {
   color: #35495e;
@@ -35,9 +35,12 @@ a {
   color: #fff;
 }
 
+.btn, .btn-social {
+  font-weight: normal !important;
+}
+
 .loading {
-  background: url(../../static/img/loading.svg) no-repeat;
-  padding-left: 30px;
+  background: url(../svg/svg-icons/loading.svg) no-repeat bottom right;
   font-style: normal;
   color: #999;
   line-height: 20px;

@@ -12,11 +12,25 @@
           <input class="form-control" type="text" placeholder="Your name" v-model="name" />
           <div class="result">{{ result }}</div>
       </div>
+
+      <div class="mt-5">
+        <div v-if="userSession">
+          <p class="pt-3">Hi {{userSession.displayName}}!</p>
+          <v-link-button @click="$store.dispatch('signout')" sm primary>Sign Out</v-link-button>
+        </div>
+        <div v-else>
+        <p class="pt-3">You are not authenticated.</p>
+          <v-link-button href="/signin" sm primary>Sign In</v-link-button>
+          <v-link-button href="/signup" sm outline-secondary class="ml-2">Register New User</v-link-button>
+        </div>
+      </div>
+
     </div>
   </section>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 import AppLogo from '~/components/AppLogo.vue'
 import { hello } from "~/shared/gateway";
 
@@ -27,8 +41,16 @@ export default {
   
   data: () => ({ 
     name: '',
-    result: ' '
+    result: ''
   }),
+
+  computed: {
+      ...mapGetters(["userSession"])
+  },
+
+  mounted () {
+    this.name = 'Nuxt';
+  },
 
   watch: {
     name: async function(newName) {

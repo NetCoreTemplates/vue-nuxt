@@ -5,16 +5,29 @@ module.exports = {
     dir: 'wwwroot',    
     routes: [
       // Generate static pages for static file servers handling dynamic routes
-      ...[...Array(5).keys()].map(i => `/posts/${i+1}`) //= [/posts/1, /posts/2, /posts/3, /posts/4, /posts/5]
     ]
   },
-  plugins: [{ src: '~/plugins/nuxt-client-init.js', ssr: false }],
-  modules: ['@nuxtjs/proxy','@nuxtjs/font-awesome'],
+  plugins: [{ src: '~/plugins/nuxt-client-init.js', ssr: false }, { src: '~/plugins/servicestack-vue.js', ssr: false }],
+  modules: ['@nuxtjs/proxy'],
   proxy: {
-    '/json': 'http://localhost:5000/',
-    '/auth': 'http://localhost:5000/',
+    '/json': {
+      target: 'https://localhost:5001/',
+      secure: false
+    },
+    '/auth': {
+      target: 'https://localhost:5001/',
+      secure: false
+    },
+    '/metadata': {
+      target: 'https://localhost:5001/',
+      secure: false
+    },
+    '/css': {
+      target: 'https://localhost:5001/',
+      secure: false
+    },
   },
-  css: ['bootstrap/dist/css/bootstrap.css', '~/assets/css/app.css'],
+  css: ['bootstrap/dist/css/bootstrap.css', '~/assets/css/default.css'],
   /*
   ** Headers of the page
   */
