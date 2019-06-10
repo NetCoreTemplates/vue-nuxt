@@ -22,15 +22,15 @@
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-lg btn-primary">Login</button>
-                <v-link-button href="/signup" lg outline-secondary class="ml-2">Register New User</v-link-button>
+                <link-button href="/signup" lg outline-secondary class="ml-2">Register New User</link-button>
             </div>
         </form>
         
         <div class="pt-3">
             <h5>Quick Login:</h5>
             <p class="btn-group">
-                <v-link-button outline-info sm @click="switchUser('admin@email.com')">admin@email.com</v-link-button>
-                <v-link-button outline-info sm @click="switchUser('new@user.com')">new@user.com</v-link-button>
+                <link-button outline-info sm @click="switchUser('admin@email.com')">admin@email.com</link-button>
+                <link-button outline-info sm @click="switchUser('new@user.com')">new@user.com</link-button>
             </p>
         </div>
     </div>
@@ -38,7 +38,7 @@
     <div class="col-5">
         <div class="row justify-content-end mt-5">
             <div class="col col-8">
-                <v-nav-button-group :items="nav.navItemsMap.auth" :attributes="userAttributes" :baseHref="nav.baseUrl" block lg />
+                <nav-button-group :items="nav.navItemsMap.auth" :attributes="userAttributes" :baseHref="nav.baseUrl" block lg />
             </div>
         </div>
     </div>

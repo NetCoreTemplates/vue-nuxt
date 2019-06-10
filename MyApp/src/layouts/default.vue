@@ -12,7 +12,7 @@
                 </div>
             </nuxt-link>
           
-            <v-navbar :items="nav.results" :attributes="userAttributes" />
+            <navbar :items="nav.results" :attributes="userAttributes" />
         </div>
     </nav>
 

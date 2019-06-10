@@ -16,7 +16,7 @@
           <mark v-for="x in userSession.permissions" :key="x">{{x}}</mark>
       </p>
       <p>
-          <v-link-button @click="signout" primary>Sign Out</v-link-button>
+          <link-button @click="signout" primary>Sign Out</link-button>
       </p>
   </div>
 </template>

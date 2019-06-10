@@ -30,13 +30,13 @@
         </div>
         <div class="form-group">
             <v-button type="submit" lg primary>Register</v-button>
-            <v-link-button href="/signin" navItemClass="btn">Sign In</v-link-button>
+            <link-button href="/signin" navItemClass="btn">Sign In</link-button>
         </div>
 
         <div class="pt-3">
             <h5>Quick Populate:</h5>
             <p class="pt-1">
-                <v-link-button outline-info sm @click="newUser('new@user.com')">new@user.com</v-link-button>
+                <link-button outline-info sm @click="newUser('new@user.com')">new@user.com</link-button>
             </p>
         </div>
     </form>

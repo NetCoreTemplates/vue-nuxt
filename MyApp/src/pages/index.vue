@@ -16,12 +16,12 @@
       <div class="mt-5">
         <div v-if="userSession">
           <p class="pt-3">Hi {{userSession.displayName}}!</p>
-          <v-link-button @click="$store.dispatch('signout')" sm primary>Sign Out</v-link-button>
+          <link-button @click="$store.dispatch('signout')" sm primary>Sign Out</link-button>
         </div>
         <div v-else>
         <p class="pt-3">You are not authenticated.</p>
-          <v-link-button href="/signin" sm primary>Sign In</v-link-button>
-          <v-link-button href="/signup" sm outline-secondary class="ml-2">Register New User</v-link-button>
+          <link-button href="/signin" sm primary>Sign In</link-button>
+          <link-button href="/signup" sm outline-secondary class="ml-2">Register New User</link-button>
         </div>
       </div>
 
