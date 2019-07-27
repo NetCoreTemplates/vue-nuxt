@@ -15,6 +15,10 @@ html {
 
 body {
 }
+.form-check.form-control {
+  padding-left: 1.75rem;
+  height: auto;
+}
 .navbar {
   border-radius: 0;
   background: #2f495e !important;
