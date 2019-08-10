@@ -44,7 +44,7 @@ a {
 }
 
 .loading {
-  background: url(../svg/svg-icons/loading.svg) no-repeat bottom right;
+  background: url(../../static/svg/svg-icons/loading.svg) no-repeat bottom right;
   font-style: normal;
   color: #999;
   line-height: 20px;
