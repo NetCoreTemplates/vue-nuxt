@@ -4,7 +4,7 @@
 
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/vue-nuxt.png)](http://vue-nuxt.web-templates.io/)
 
-> Browse [source code](https://github.com/NetCoreTemplates/vue-nuxt), view live demo [vue-nuxt.web-templates.io](http://vue-nuxt.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
+> Browse [source code](https://github.com/NetCoreTemplates/vue-nuxt), view live demo [vue-nuxt.web-templates.io](http://vue-nuxt.web-templates.io) and install with [dotnet-new](https://docs.servicestack.net/dotnet-new):
 
     $ dotnet tool install -g x
 
@@ -12,7 +12,7 @@
 
 ## Description
 
-Nuxt is an opinionated structured framework for rapidly developing Web Applications utilizing developer-friendly [Vue Single Page Components](https://vuejs.org/v2/guide/single-file-components.html) and featuring Hot module replacement that together with [.NET Core's watched builds](http://docs.servicestack.net/templates-websites#watched-net-core-builds) provides an highly productive development experience.
+Nuxt is an opinionated structured framework for rapidly developing Web Applications utilizing developer-friendly [Vue Single Page Components](https://vuejs.org/v2/guide/single-file-components.html) and featuring Hot module replacement that together with [.NET Core's watched builds](https://docs.servicestack.net/templates-websites#watched-net-core-builds) provides an highly productive development experience.
 
 Nuxt also enables the development of high-performance responsive Web Apps by employing advanced packaging techniques like automatic code spliting, link prefetching, SPA navigation of statically-generated cacheable assets and integrated support for ES6/7 transpilation and js/css bundling and minification.
 
@@ -28,7 +28,7 @@ If your IDE doesn't automatically install your .NET NuGet Dependencies, you can 
 
 ## Dev Workflow
 
-Start a [watched .NET Core build](http://docs.servicestack.net/templates-websites#watched-net-core-builds) in the background from the command-line with:
+Start a [watched .NET Core build](https://docs.servicestack.net/templates-websites#watched-net-core-builds) in the background from the command-line with:
 
     $ dotnet watch run
 
@@ -40,7 +40,7 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser to view
 
 ## Update DTOs
 
-Whilst Nuxt.js is a JavaScript (ES 6/7) App it still benefits from [ServiceStack's TypeScript Add Reference](http://docs.servicestack.net/typescript-add-servicestack-reference) where you can generate typed DTOs with the `dtos` npm script:
+Whilst Nuxt.js is a JavaScript (ES 6/7) App it still benefits from [ServiceStack's TypeScript Add Reference](https://docs.servicestack.net/typescript-add-servicestack-reference) where you can generate typed DTOs with the `dtos` npm script:
 
     $ npm run dtos
 
