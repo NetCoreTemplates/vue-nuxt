@@ -47,7 +47,10 @@ namespace MyApp
         // Configure your AppHost with the necessary configuration and dependencies your App needs
         public override void Configure(Container container)
         {
-            Plugins.Add(new SharpPagesFeature()); // enable server-side rendering, see: https://sharpscript.net/docs/sharp-pages
+            // enable server-side rendering, see: https://sharpscript.net/docs/sharp-pages
+            Plugins.Add(new SharpPagesFeature {
+                EnableSpaFallback = true
+            }); 
 
             SetConfig(new HostConfig
             {
