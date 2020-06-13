@@ -25,7 +25,7 @@
             <v-svg id="servicestack" class="svg-3x" fill="#333" />
             <a href="https://github.com/NetCoreTemplates/vue-nuxt">Learn about this Vue Nuxt.js template</a>
         </h4>
-        <div>Copyright &copy; 2019</div>
+        <div>Copyright &copy; 2020</div>
     </div>
     
 </div>
