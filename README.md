@@ -36,7 +36,7 @@ In a new terminal window start a watched nuxt dev server build with:
 
     $ npm run dev
 
-Then open [http://localhost:3000](http://localhost:3000) in your browser to view your App served directly from Nuxt.js dev server and will proxy all Server requests to ServiceStack Server running on [http://localhost:5000](http://localhost:5000).
+Then open [http://localhost:3000](http://localhost:3000) in your browser to view your App served directly from Nuxt.js dev server and will proxy all Server requests to ServiceStack Server running on [https://localhost:5001](https://localhost:5001).
 
 ## Update DTOs
 
@@ -55,7 +55,7 @@ Most of the time during development you'll be viewing your App through Nuxt.js d
 
 Which will generate an encapsulated production build of your App in `/wwwroot` which you can view running from your ServiceStack Server App directly:
 
- - http://localhost:5000
+ - https://localhost:5001
 
 ## Publishing App for Deployment
 
