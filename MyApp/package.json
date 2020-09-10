@@ -30,7 +30,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "gulp": "^4.0.2",
     "loader-utils": "^2.0.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "typescript": "^3.9.5"
   }
 }
