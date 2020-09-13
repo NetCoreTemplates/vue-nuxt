@@ -54,7 +54,6 @@ namespace MyApp
 
             SetConfig(new HostConfig
             {
-                UseSameSiteCookies = true,
                 AddRedirectParamsToQueryString = true,
                 DebugMode = AppSettings.Get(nameof(HostConfig.DebugMode), HostingEnvironment.IsDevelopment()),
             });
