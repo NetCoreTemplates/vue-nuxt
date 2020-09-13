@@ -33,7 +33,9 @@ a {
 #content a {
   font-weight: bold;
 }
-
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
 .navbar-nav .nav-item .nuxt-link-active,
 .navbar-nav .nav-item .nuxt-link-active:focus {
   color: #fff;
