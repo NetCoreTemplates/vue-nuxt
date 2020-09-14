@@ -1,5 +1,5 @@
 module.exports = {
-  mode: 'spa',
+  ssr: false,
   srcDir: 'src',
   generate: {
     dir: 'wwwroot',    

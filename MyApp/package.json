@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "npm run build",
     "dev": "nuxt",
-    "dtos": "cd src/shared && x typescript && tsc -m ES6 dtos.ts",
+    "dtos": "cd src/shared && x typescript && tsc dtos.ts",
     "build": "nuxt build",
     "publish": "npm run build && dotnet publish -c Release",
     "lint": "eslint --ext .js,.vue .",

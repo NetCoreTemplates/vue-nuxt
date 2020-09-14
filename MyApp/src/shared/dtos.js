@@ -1,6 +1,7 @@
+"use strict";
 /* Options:
-Date: 2020-07-20 07:38:23
-Version: 5.91
+Date: 2020-09-14 17:33:47
+Version: 5.93
 Tip: To override a DTO option, remove "//" prefix before updating
 BaseUrl: https://localhost:5001
 
@@ -14,6 +15,8 @@ BaseUrl: https://localhost:5001
 //ExcludeTypes:
 //DefaultImports:
 */
+exports.__esModule = true;
+exports.Register = exports.UnAssignRoles = exports.AssignRoles = exports.Authenticate = exports.GetPost = exports.GetLinks = exports.Hello = exports.RegisterResponse = exports.UnAssignRolesResponse = exports.AssignRolesResponse = exports.AuthenticateResponse = exports.GetPostResponse = exports.GetLinksResponse = exports.HelloResponse = exports.ResponseStatus = exports.ResponseError = void 0;
 // @DataContract
 var ResponseError = /** @class */ (function () {
     function ResponseError(init) {
@@ -21,7 +24,7 @@ var ResponseError = /** @class */ (function () {
     }
     return ResponseError;
 }());
-export { ResponseError };
+exports.ResponseError = ResponseError;
 // @DataContract
 var ResponseStatus = /** @class */ (function () {
     function ResponseStatus(init) {
@@ -29,28 +32,28 @@ var ResponseStatus = /** @class */ (function () {
     }
     return ResponseStatus;
 }());
-export { ResponseStatus };
+exports.ResponseStatus = ResponseStatus;
 var HelloResponse = /** @class */ (function () {
     function HelloResponse(init) {
         Object.assign(this, init);
     }
     return HelloResponse;
 }());
-export { HelloResponse };
+exports.HelloResponse = HelloResponse;
 var GetLinksResponse = /** @class */ (function () {
     function GetLinksResponse(init) {
         Object.assign(this, init);
     }
     return GetLinksResponse;
 }());
-export { GetLinksResponse };
+exports.GetLinksResponse = GetLinksResponse;
 var GetPostResponse = /** @class */ (function () {
     function GetPostResponse(init) {
         Object.assign(this, init);
     }
     return GetPostResponse;
 }());
-export { GetPostResponse };
+exports.GetPostResponse = GetPostResponse;
 // @DataContract
 var AuthenticateResponse = /** @class */ (function () {
     function AuthenticateResponse(init) {
@@ -58,7 +61,7 @@ var AuthenticateResponse = /** @class */ (function () {
     }
     return AuthenticateResponse;
 }());
-export { AuthenticateResponse };
+exports.AuthenticateResponse = AuthenticateResponse;
 // @DataContract
 var AssignRolesResponse = /** @class */ (function () {
     function AssignRolesResponse(init) {
@@ -66,7 +69,7 @@ var AssignRolesResponse = /** @class */ (function () {
     }
     return AssignRolesResponse;
 }());
-export { AssignRolesResponse };
+exports.AssignRolesResponse = AssignRolesResponse;
 // @DataContract
 var UnAssignRolesResponse = /** @class */ (function () {
     function UnAssignRolesResponse(init) {
@@ -74,7 +77,7 @@ var UnAssignRolesResponse = /** @class */ (function () {
     }
     return UnAssignRolesResponse;
 }());
-export { UnAssignRolesResponse };
+exports.UnAssignRolesResponse = UnAssignRolesResponse;
 // @DataContract
 var RegisterResponse = /** @class */ (function () {
     function RegisterResponse(init) {
@@ -82,7 +85,7 @@ var RegisterResponse = /** @class */ (function () {
     }
     return RegisterResponse;
 }());
-export { RegisterResponse };
+exports.RegisterResponse = RegisterResponse;
 // @Route("/hello")
 // @Route("/hello/{Name}")
 var Hello = /** @class */ (function () {
@@ -93,7 +96,7 @@ var Hello = /** @class */ (function () {
     Hello.prototype.getTypeName = function () { return 'Hello'; };
     return Hello;
 }());
-export { Hello };
+exports.Hello = Hello;
 // @Route("/links")
 var GetLinks = /** @class */ (function () {
     function GetLinks(init) {
@@ -103,7 +106,7 @@ var GetLinks = /** @class */ (function () {
     GetLinks.prototype.getTypeName = function () { return 'GetLinks'; };
     return GetLinks;
 }());
-export { GetLinks };
+exports.GetLinks = GetLinks;
 // @Route("/posts")
 var GetPost = /** @class */ (function () {
     function GetPost(init) {
@@ -113,7 +116,7 @@ var GetPost = /** @class */ (function () {
     GetPost.prototype.getTypeName = function () { return 'GetPost'; };
     return GetPost;
 }());
-export { GetPost };
+exports.GetPost = GetPost;
 // @Route("/auth")
 // @Route("/auth/{provider}")
 // @DataContract
@@ -125,7 +128,7 @@ var Authenticate = /** @class */ (function () {
     Authenticate.prototype.getTypeName = function () { return 'Authenticate'; };
     return Authenticate;
 }());
-export { Authenticate };
+exports.Authenticate = Authenticate;
 // @Route("/assignroles")
 // @DataContract
 var AssignRoles = /** @class */ (function () {
@@ -136,7 +139,7 @@ var AssignRoles = /** @class */ (function () {
     AssignRoles.prototype.getTypeName = function () { return 'AssignRoles'; };
     return AssignRoles;
 }());
-export { AssignRoles };
+exports.AssignRoles = AssignRoles;
 // @Route("/unassignroles")
 // @DataContract
 var UnAssignRoles = /** @class */ (function () {
@@ -147,7 +150,7 @@ var UnAssignRoles = /** @class */ (function () {
     UnAssignRoles.prototype.getTypeName = function () { return 'UnAssignRoles'; };
     return UnAssignRoles;
 }());
-export { UnAssignRoles };
+exports.UnAssignRoles = UnAssignRoles;
 // @Route("/register")
 // @DataContract
 var Register = /** @class */ (function () {
@@ -158,4 +161,4 @@ var Register = /** @class */ (function () {
     Register.prototype.getTypeName = function () { return 'Register'; };
     return Register;
 }());
-export { Register };
+exports.Register = Register;
