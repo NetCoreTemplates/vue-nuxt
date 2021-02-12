@@ -9,6 +9,11 @@
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
+   
+  <Target Name="Bundle" BeforeTargets="BeforePublish">
+    <Exec Command="tsc src/shared/dtos.ts" />
+    <Exec Command="npm install --also=dev" />
+  </Target>
   
   <ItemGroup>
     <PackageReference Include="ServiceStack" Version="5.*" />
