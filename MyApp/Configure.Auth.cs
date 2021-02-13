@@ -6,7 +6,7 @@ using ServiceStack.FluentValidation;
 namespace MyApp
 {
     // Add any additional metadata properties you want to store in the Users Typed Session
-    public class CustomUserSession : AuthUserSession 
+    public class CustomUserSession : AuthUserSession
     {
     }
     
