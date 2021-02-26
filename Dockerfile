@@ -7,18 +7,18 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x | bash - \
  && echo "npm version: $(npm --version)" \
  && rm -rf /var/lib/apt/lists/*
 
-COPY VueNuxt/package.json .
-COPY VueNuxt/npm-shrinkwrap.json .
+COPY MyApp/package.json .
+COPY MyApp/npm-shrinkwrap.json .
 
-RUN npm --prefix VueNuxt install
+RUN npm --prefix MyApp install
 
 COPY . .
 RUN dotnet restore
 
-WORKDIR /source/VueNuxt
+WORKDIR /source/MyApp
 RUN dotnet publish -c release -o /app --no-restore
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
 WORKDIR /app
 COPY --from=build /app ./
-ENTRYPOINT ["dotnet", "VueNuxt.dll"]
+ENTRYPOINT ["dotnet", "MyApp.dll"]
