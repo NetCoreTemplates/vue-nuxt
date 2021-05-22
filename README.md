@@ -10,6 +10,12 @@
 
     $ x new vue-nuxt ProjectName
 
+Alternatively write new project files directly into an empty repository, using the Directory Name as the ProjectName:
+
+    $ git clone https://github.com/<User>/<ProjectName>.git
+    $ cd <ProjectName>
+    $ x new vue-nuxt
+
 ## Description
 
 Nuxt is an opinionated structured framework for rapidly developing Web Applications utilizing developer-friendly [Vue Single Page Components](https://vuejs.org/v2/guide/single-file-components.html) and featuring Hot module replacement that together with [.NET Core's watched builds](https://docs.servicestack.net/templates-websites#watched-net-core-builds) provides an highly productive development experience.
