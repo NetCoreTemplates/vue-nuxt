@@ -20,12 +20,12 @@
         <nuxt/>
     </div>
 
-    <div id="footer" style="text-align:center; position:absolute; bottom:50px; width:100%;">
+    <div id="footer" style="text-align:center;width:100%;">
         <h4>
             <v-svg id="servicestack" class="svg-3x" fill="#333" />
             <a href="https://github.com/NetCoreTemplates/vue-nuxt">Learn about this Vue Nuxt.js template</a>
         </h4>
-        <div>Copyright &copy; 2020</div>
+        <div>Copyright &copy; 2021</div>
     </div>
     
 </div>

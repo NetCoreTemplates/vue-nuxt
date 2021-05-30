@@ -4,33 +4,33 @@
     <h3>Register New User</h3>
 
     <form @submit.prevent="submit" :class="{ error:responseStatus, loading }" >
-        <div class="form-group">
+        <div class="mb-3">
             <error-summary except="displayName,email,password,confirmPassword" :responseStatus="responseStatus" />
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <v-input id="displayName" v-model="displayName" :responseStatus="responseStatus"
                      placeholder="Display Name" label="Name" help="Your first and last name" />
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <v-input id="email" v-model="email" :responseStatus="responseStatus"
                      placeholder="Email" label="Email" />
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <v-input type="password" id="password" v-model="password" :responseStatus="responseStatus"
                      placeholder="Password" label="Password" />
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <v-input type="password" id="confirmPassword" v-model="confirmPassword" :responseStatus="responseStatus"
                      placeholder="Confirm" label="Confirm Password" />
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <v-checkbox id="autoLogin" v-model="autoLogin" :responseStatus="responseStatus">
               Auto Login
             </v-checkbox>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <v-button type="submit" lg primary>Register</v-button>
-            <link-button href="/signin" navItemClass="btn">Sign In</link-button>
+            <link-button href="/signin" navItemClass="btn btn-lg ms-2">Sign In</link-button>
         </div>
 
         <div class="pt-3">

@@ -4,23 +4,23 @@
         <h3>Sign In</h3>
         
         <form ref="form" @submit.prevent="submit" :class="{ error:responseStatus, loading }" >
-            <div class="form-group">
+            <div class="mb-3">
                 <error-summary except="userName,password" :responseStatus="responseStatus" />
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <v-input id="userName" v-model="userName" placeholder="Username" :responseStatus="responseStatus" 
                          label="Email"  help="Email you signed up with" />
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <v-input type="password" id="password" v-model="password" placeholder="Password" :responseStatus="responseStatus" 
                          label="Password"  help="6 characters or more" />
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <v-checkbox id="rememberMe" v-model="rememberMe" :responseStatus="responseStatus">
                     Remember Me
                 </v-checkbox>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
                 <button type="submit" class="btn btn-lg btn-primary">Login</button>
                 <link-button href="/signup" lg outline-secondary class="ml-2">Register New User</link-button>
             </div>
@@ -34,12 +34,11 @@
             </p>
         </div>
     </div>
-
+    <div class="col-3"></div>
     <div class="col-5">
-        <div class="row justify-content-end mt-5">
-            <div class="col col-8">
-                <nav-button-group :items="nav.navItemsMap.auth" :attributes="userAttributes" :baseHref="nav.baseUrl" block lg />
-            </div>
+        <div class="row justify-content-end mt-5" style="max-width:300px">
+            <nav-button-group class="nav-button-group" 
+                :items="nav.navItemsMap.auth" :attributes="userAttributes" :baseHref="nav.baseUrl" block lg />
         </div>
     </div>
 </div>

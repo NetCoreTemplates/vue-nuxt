@@ -1,8 +1,5 @@
 html {
   font-family: Source Sans Pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
-  font-size: 15px;
-  word-spacing: 1px;
-  line-height: 20px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -23,16 +20,6 @@ body {
   border-radius: 0;
   background: #2f495e !important;
 }
-a {
-  color: #35495e;
-}
-
-#content {
-  padding: 20px;
-}
-#content a {
-  font-weight: bold;
-}
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -40,7 +27,27 @@ a {
 .navbar-nav .nav-item .nuxt-link-active:focus {
   color: #fff;
 }
+a {
+  color: #35495e;
+}
 
+#content {
+  padding: 20px;
+  min-height: 550px;
+}
+#content a {
+  font-weight: bold;
+}
+.nav-button-group {
+  display: flex;
+  flex-direction: column;
+}
+.btn-block a {
+  display: block;
+}
+.nav-button-group .btn-block {
+  margin-bottom: .25rem;
+}
 .btn, .btn-social {
   font-weight: normal !important;
 }
