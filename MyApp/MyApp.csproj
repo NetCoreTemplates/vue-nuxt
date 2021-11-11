@@ -1,8 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TypeScriptToolsVersion>latest</TypeScriptToolsVersion>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
   
@@ -14,7 +16,7 @@
     <Exec Command="npm install --also=dev" />
     <Exec Command="npm run-script build" />
   </Target>
-  
+
   <ItemGroup>
     <PackageReference Include="ServiceStack" Version="5.*" />
   </ItemGroup>
@@ -23,10 +25,10 @@
     <ProjectReference Include="..\MyApp.ServiceInterface\MyApp.ServiceInterface.csproj" />
     <ProjectReference Include="..\MyApp.ServiceModel\MyApp.ServiceModel.csproj" />
   </ItemGroup>
-  
+
   <Target Name="OnFirstUse" BeforeTargets="Build" Condition=" !Exists('wwwroot\dist') ">
     <Exec Command="node --version" ContinueOnError="true"><Output TaskParameter="ExitCode" PropertyName="ErrorCode" /></Exec>
     <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
   </Target>
-
+  
 </Project>
