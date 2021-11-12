@@ -1,6 +1,6 @@
 # vue-nuxt
 
-.NET 5.0 Vue Nuxt.js App Template
+.NET 6.0 Vue Nuxt.js App Template
 
 [![](https://raw.githubusercontent.com/ServiceStack/Assets/master/csharp-templates/vue-nuxt.png)](http://vue-nuxt.web-templates.io/)
 
