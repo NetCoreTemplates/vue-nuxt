@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  ${APP_NAME}:
+    image: ghcr.io/${IMAGE_REPO}:${RELEASE_VERSION}
+    restart: always
+    network_mode: bridge
+    ports:
+      - "80"
+    environment:
+      VIRTUAL_HOST: ${HOST_DOMAIN}
+      LETSENCRYPT_HOST: ${HOST_DOMAIN}
+      LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
