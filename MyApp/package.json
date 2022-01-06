@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/font-awesome": "^1.0.4",
-    "@servicestack/client": "^1.1.12",
+    "@servicestack/client": "^1.1.13",
     "@servicestack/vue": "^1.0.13",
     "bootstrap": "^5.0.1",
     "nuxt": "^2.15.6",
