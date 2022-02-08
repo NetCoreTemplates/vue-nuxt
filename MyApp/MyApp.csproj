@@ -7,6 +7,10 @@
     <TypeScriptToolsVersion>latest</TypeScriptToolsVersion>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
   </PropertyGroup>
+  <ItemGroup>
+    <Using Include="MyApp" />
+    <Using Include="ServiceStack" />
+  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />

@@ -10,5 +10,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
     app.UseHttpsRedirection();
 }
+app.UseServiceStack(new AppHost());
 
 app.Run();
