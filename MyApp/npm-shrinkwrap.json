@@ -10,7 +10,7 @@
       "hasInstallScript": true,
       "dependencies": {
         "@nuxtjs/font-awesome": "^1.0.4",
-        "@servicestack/client": "^1.0.57",
+        "@servicestack/client": "^1.1.19",
         "@servicestack/vue": "^1.0.13",
         "bootstrap": "^5.0.1",
         "nuxt": "^2.15.6",
@@ -26,8 +26,8 @@
         "eslint-plugin-vue": "^7.9.0",
         "gulp": "^4.0.2",
         "loader-utils": "^2.0.0",
-        "node-fetch": "^2.6.1",
-        "typescript": "^4.3.2"
+        "node-fetch": "^2.6.7",
+        "typescript": "^4.5.4"
       }
     },
     "node_modules/@babel/code-frame": {
@@ -3046,13 +3046,13 @@
       }
     },
     "node_modules/@servicestack/client": {
-      "version": "1.0.57",
-      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.0.57.tgz",
-      "integrity": "sha512-iPqZlRYsiS6+Ynz2Z2VQG7F7f0DhPSYABuv3JQRUnAsd5Ky7s2REYT1Wco4V03/iAzxvFtc20HZRVKhbWpyeBw==",
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.2.1.tgz",
+      "integrity": "sha512-u6x85HXNnctnOdkQqGJto7oYI/bkUqYn72N8qjlYiPMFIPul4FbtqDWtubEb+r4RGxMoiDwyXl9fvYLjTsSzNA==",
       "dependencies": {
-        "cross-fetch": "^3.1.0",
+        "cross-fetch": "^3.1.4",
         "es6-shim": "^0.35.6",
-        "eventsource": "^1.0.7"
+        "eventsource": "^1.1.0"
       }
     },
     "node_modules/@servicestack/vue": {
@@ -10748,14 +10748,22 @@
       }
     },
     "node_modules/node-fetch": {
-      "version": "2.6.6",
-      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.6.tgz",
-      "integrity": "sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==",
+      "version": "2.6.7",
+      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz",
+      "integrity": "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==",
       "dependencies": {
         "whatwg-url": "^5.0.0"
       },
       "engines": {
         "node": "4.x || >=6.0.0"
+      },
+      "peerDependencies": {
+        "encoding": "^0.1.0"
+      },
+      "peerDependenciesMeta": {
+        "encoding": {
+          "optional": true
+        }
       }
     },
     "node_modules/node-html-parser": {
@@ -15497,9 +15505,9 @@
       "integrity": "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
     },
     "node_modules/typescript": {
-      "version": "4.5.2",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.5.2.tgz",
-      "integrity": "sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==",
+      "version": "4.7.4",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.7.4.tgz",
+      "integrity": "sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==",
       "bin": {
         "tsc": "bin/tsc",
         "tsserver": "bin/tsserver"
@@ -19615,13 +19623,13 @@
       }
     },
     "@servicestack/client": {
-      "version": "1.0.57",
-      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.0.57.tgz",
-      "integrity": "sha512-iPqZlRYsiS6+Ynz2Z2VQG7F7f0DhPSYABuv3JQRUnAsd5Ky7s2REYT1Wco4V03/iAzxvFtc20HZRVKhbWpyeBw==",
+      "version": "1.2.1",
+      "resolved": "https://registry.npmjs.org/@servicestack/client/-/client-1.2.1.tgz",
+      "integrity": "sha512-u6x85HXNnctnOdkQqGJto7oYI/bkUqYn72N8qjlYiPMFIPul4FbtqDWtubEb+r4RGxMoiDwyXl9fvYLjTsSzNA==",
       "requires": {
-        "cross-fetch": "^3.1.0",
+        "cross-fetch": "^3.1.4",
         "es6-shim": "^0.35.6",
-        "eventsource": "^1.0.7"
+        "eventsource": "^1.1.0"
       }
     },
     "@servicestack/vue": {
@@ -25710,9 +25718,9 @@
       }
     },
     "node-fetch": {
-      "version": "2.6.6",
-      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.6.tgz",
-      "integrity": "sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==",
+      "version": "2.6.7",
+      "resolved": "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz",
+      "integrity": "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==",
       "requires": {
         "whatwg-url": "^5.0.0"
       }
@@ -29489,9 +29497,9 @@
       "integrity": "sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c="
     },
     "typescript": {
-      "version": "4.5.2",
-      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.5.2.tgz",
-      "integrity": "sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw=="
+      "version": "4.7.4",
+      "resolved": "https://registry.npmjs.org/typescript/-/typescript-4.7.4.tgz",
+      "integrity": "sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ=="
     },
     "ua-parser-js": {
       "version": "0.7.31",
