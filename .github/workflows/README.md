@@ -1,8 +1,8 @@
 # ServiceStack mix GitHub Actions
-`release.yml` generated from `x mix release-ghr-vanilla`, this template in designed to help with CI deployment to a dedicated server with SSH access.
+The `release.yml` in designed to help with CI deployment to a dedicated server with SSH access, Docker and Docker Compose.
 
 ## Overview
-`release.yml` is designed to work with a ServiceStack app deploying directly to a single server via SSH. A docker image is built and stored on GitHub's `ghcr.io` docker registry when a GitHub Release is created.
+A docker image is built and stored on GitHub's `ghcr.io` docker registry when a GitHub Release is created.
 
 GitHub Actions specified in `release.yml` then copy files remotely via scp and use `docker-compose` to run the app remotely via SSH.
 
@@ -29,25 +29,15 @@ docker-compose -f ~/nginx-proxy-compose.yml up -d
 This will run an nginx reverse proxy along with a companion container that will watch for additional containers in the same docker network and attempt to initialize them with valid TLS certificates.
 
 ## GitHub Repository setup
-The `release.yml` assumes 6 secrets have been setup.
+The `release.yml` uses the following secrets.
 
-- CR_PAT - GitHub Personal Token with read/write access to packages.
 - DEPLOY_HOST - hostname used to SSH to, this can either be an IP address or subdomain with A record pointing to the server.
 - DEPLOY_PORT - SSH port, usually `22`.
 - DEPLOY_USERNAME - the username being logged into via SSH. Eg, `ubuntu`, `ec2-user`, `root` etc.
 - DEPLOY_KEY - SSH private key used to remotely access deploy server/app host.
 - LETSENCRYPT_EMAIL - Email address, required for Let's Encrypt automated TLS certificates.
 
-These secrets can use the [GitHub CLI](https://cli.github.com/manual/gh_secret_set) for ease of creation. Eg, using the GitHub CLI the following can be set.
-
-```bash
-gh secret set CR_PAT -b"<CR_PAT, Container Registry Personal Access Token>"
-gh secret set DEPLOY_HOST -b"<DEPLOY_HOST, domain or subdomain for your application and server host.>"
-gh secret set DEPLOY_PORT -b"<DEPLOY_PORT, eg SSH port, usually 22>"
-gh secret set DEPLOY_USERNAME -b"<DEPLOY_USERNAME, the username being logged into via SSH. Eg, `ubuntu`, `ec2-user`, `root` etc.>"
-gh secret set DEPLOY_KEY -b"<DEPLOY_KEY, SSH private key used to remotely access deploy server/app host.>"
-gh secret set LETSENCRYPT_EMAIL -b"<LETSENCRYPT_EMAIL, Email address for your TLS certificate generation, eg me@example.com>"
-```
+These secrets can use the [GitHub CLI](https://cli.github.com/manual/gh_secret_set) for ease of creation.
 
 These secrets are used to populate variables within GitHub Actions and other configuration files.
 
