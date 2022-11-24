@@ -109,7 +109,7 @@ jobs:
 
       # Copy only the docker-compose.yml to remote server home folder
       - name: copy compose file via scp
-        uses: appleboy/scp-action@v0.1.1
+        uses: appleboy/scp-action@v0.1.3
         with:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USERNAME }}
