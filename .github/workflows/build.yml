@@ -16,7 +16,7 @@ jobs:
       - name: setup .net core
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 6.0.100
+          dotnet-version: '6.0'
 
       - name: build
         run: dotnet build
