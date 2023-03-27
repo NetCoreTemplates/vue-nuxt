@@ -32,7 +32,6 @@ This will run an nginx reverse proxy along with a companion container that will 
 The `release.yml` uses the following secrets.
 
 - DEPLOY_HOST - hostname used to SSH to, this can either be an IP address or subdomain with A record pointing to the server.
-- DEPLOY_PORT - SSH port, usually `22`.
 - DEPLOY_USERNAME - the username being logged into via SSH. Eg, `ubuntu`, `ec2-user`, `root` etc.
 - DEPLOY_KEY - SSH private key used to remotely access deploy server/app host.
 - LETSENCRYPT_EMAIL - Email address, required for Let's Encrypt automated TLS certificates.
