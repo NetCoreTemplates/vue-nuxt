@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports:
+      - "5000:80"
+    volumes:
+      - app-mydb:/app/App_Data
+  app-migration:
+    build: .
+    restart: "no"
+    profiles:
+      - migration
+    command: --AppTasks=migrate
+    volumes:
+      - app-mydb:/app/App_Data
+
+volumes:
+  app-mydb:

@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+    app:
+        volumes:
+            - app-mydb:/app/App_Data
+    app-migration:
+        restart: "no"
+        profiles:
+            - migration
+        command: --AppTasks=migrate
+        volumes:
+            - app-mydb:/app/App_Data
+
+volumes:
+    app-mydb:

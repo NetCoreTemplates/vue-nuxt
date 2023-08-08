@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+    app:
+        image: ghcr.io/${IMAGE_REPO}:${RELEASE_VERSION}
+        restart: always
+        ports:
+            - "80"
+        container_name: ${APP_NAME}_app
+        environment:
+            VIRTUAL_HOST: ${HOST_DOMAIN}
+            LETSENCRYPT_HOST: ${HOST_DOMAIN}
+            LETSENCRYPT_EMAIL: ${LETSENCRYPT_EMAIL}
+        volumes:
+            - app-mydb:/app/App_Data
+    app-migration:
+        image: ghcr.io/${IMAGE_REPO}:${RELEASE_VERSION}
+        restart: "no"
+        container_name: ${APP_NAME}_app_migration
+        profiles:
+            - migration
+        command: --AppTasks=migrate
+        volumes:
+            - app-mydb:/app/App_Data
+
+networks:
+  default:
+    external: true
+    name: nginx
+
+volumes:
+    app-mydb:
